@@ -4,3 +4,4 @@ SELECT DISTINCT id AS "id film", title FROM movie;
 
 SELECT UPPER(title) ^COM movie WHERE id > 3 AND id < 51;
 
+SELECT title FROM movie JOIN movie_schedule WHERE  movie.id = id_movie ORDER BY movie_schedule.date_begin;
